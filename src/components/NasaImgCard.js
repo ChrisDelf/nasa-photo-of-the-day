@@ -1,5 +1,5 @@
 import React from "react";
-import {Iframe, Image, Header, Card} from "../StyledComp"
+import {Iframe, Image, Header, Card, List, ListItem, Link, LinkCon} from "../StyledComp"
 
 
 
@@ -28,19 +28,19 @@ function NasaCard(props) {
         <Header> {nasaTitle}</Header>
         <p className="card-text">{nasaExp} </p>
       </div>
-      <ul>
-        <li> Cras justo odio</li>
-        <li>Dapibus ac facilisis in</li>
-        <li>Vestibulum at eros</li>
-      </ul>
-      <div className="card-body">
-        <a href="#" className="card-link">
-          Card link
-        </a>
-        <a href="#" className="card-link">
-          Another link
-        </a>
-      </div>
+      <List>
+        <ListItem> Cras justo odio</ListItem>
+        <ListItem>Dapibus ac facilisis in</ListItem>
+        <ListItem>Vestibulum at eros</ListItem>
+      </List>
+      <LinkCon>
+        <Link href="https://www.nasa.gov/">
+          Nasa's Website
+        </Link>
+        < Link href="https://rationalwiki.org/wiki/Moon_landing_hoax" >
+          We didn't land on the Moon's people wiki
+        </Link>
+      </LinkCon>
     </Card>
   );
 

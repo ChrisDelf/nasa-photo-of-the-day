@@ -33,10 +33,40 @@ export const Card = styled.div`
   border-radius: 8px;
   background-color: #e2e8f0;
   text-Align: left;
+  color:#1a202c;
+
+`
+
+export const List = styled.ul`
+  border: 1px solid  #1a202c;
+  list-style-type:none;
+  text-align: center;
+  padding: 0;
+  border-radius: 2px;
+
+
 
   `
+export const ListItem = styled.li`
+  border-top: 1px solid  #1a202c;
+  margin: 2px;
+
+`
+
+export const LinkCon = styled.div`
+  display:flex;
+  flex-direction:Column;
+
+  `
+export const Link = styled.a`
+  text-decoration: none;
+  margin: .4rem;
+  text-align: center;
 
 
+
+
+  `
 
 
 
