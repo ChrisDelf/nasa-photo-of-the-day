@@ -26,14 +26,14 @@ function NasaImgCon () {
 
   return (
     <div>
-
-         <NasaCard
-            key={nasaData}
-            nasaTitle={nasaData.title}
-            nasaDate={nasaData.date}
-            nasaExp={nasaData.explanation}
-            youtube={nasaData.url}
-          />
+      <NasaCard
+        key={nasaData}
+        nasaTitle={nasaData.title}
+        nasaDate={nasaData.date}
+        nasaExp={nasaData.explanation}
+        nasaUrl={nasaData.url}
+        nasaType={nasaData.media_type}
+      />
     </div>
   );
 }

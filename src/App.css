@@ -21,9 +21,17 @@
 .App-link {
   color: #61dafb;
 }
+
+.nasa-card {
+  width: 90%;
+
+
+
+}
+
 iframe {
 width: 90%;
-height: 250px;
+height: 600px;
 
 }
 @keyframes App-logo-spin {

@@ -2,7 +2,10 @@ import React from "react";
 
 
 function NasaCard(props) {
-  const {nasaTitle, nasaDate, nasaExp, youtube } = props;
+  const
+  {nasaTitle, nasaDate,
+    nasaExp, nasaUrl,
+    nasaType } = props;
 
 
   return (
@@ -10,13 +13,13 @@ function NasaCard(props) {
       <h2 className="App-header">{nasaTitle}</h2>
       <h>{nasaDate}</h>
       <p>{nasaExp}</p>
-      <iframe
-        src={youtube}
+   { nasaType === 'video' ? <iframe
+        src={nasaUrl}
         frameBorder="0"
         allow="autoplay; encrypted-media"
         allowFullScreen
         title="video"
-      />
+       />: <img src = {nasaUrl}/>}
     </div>
   );
 
