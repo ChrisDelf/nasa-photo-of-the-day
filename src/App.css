@@ -4,10 +4,12 @@
 
 @tailwind utilities;
 
-
 .App {
   text-align: center;
+  font-family: sans-serif;
+
 }
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

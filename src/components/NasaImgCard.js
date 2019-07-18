@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Iframe, Image} from "../StyledComp"
 
 
 
@@ -22,7 +22,7 @@ function NasaCard(props) {
         allow="autoplay; encrypted-media"
         allowFullScreen
         title="video"
-       />: <img src = {nasaUrl}/>}
+       />: <Image src = {nasaUrl}/>}
     </div>
   );
 
